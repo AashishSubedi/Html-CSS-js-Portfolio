@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    
     <header>
         <nav id="desktop-nav">
             <div class="logo">Aashish Subedi</div>
@@ -16,10 +17,12 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
         </nav>
     </header>
     <main>
         
+        <!-- Profile Section -->
         <section id="profile">
             <div class="profile-picture">
                 <img src="./assets/profile-pic.jpg" alt="Aashish profile picture">
@@ -38,13 +41,14 @@
                     <a href="#contact" class="btn btn-color-1">Contact Info</a>
                 </div>
             </div>
-            
         </section>
+
+        <!-- About Me Section -->
         <section id="about">
             <h1 class="title">About Me</h1>
             <div class="about-containers">
                 <div class="section__pic-container">
-                    
+                    <!-- Optional Image -->
                 </div>
                 <div class="about-details-container">
                     <div class="details-container">
@@ -63,6 +67,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Projects Section -->
         <section id="projects">
             <h1 class="title">Projects</h1>
             <div class="projects-container">
@@ -70,13 +76,13 @@
                 <div class="project-card">
                     <img src="./assets/project-1.png" alt="Tetris Game" class="project-img">
                     <h3 class="project-title">Tetris Game</h3>
-                    <p class="project-description">A classic Tetris game with a modern UI built Java.</p>
+                    <p class="project-description">A classic Tetris game with a modern UI built in Java.</p>
                     <div class="project-tags">
                         <span class="project-tag">Java</span>
                     </div>
                     <button class="project-btn" onclick="location.href='https://github.com/AashishSubedi/Tetris_Game'">View on GitHub</button>
                 </div>
-        
+
                 <!-- Project Card 2 -->
                 <div class="project-card">
                     <img src="./assets/project-2.png" alt="Rock Paper Scissors Game" class="project-img">
@@ -88,25 +94,50 @@
                     <button class="project-btn" onclick="location.href='https://github.com/AashishSubedi/Rock_Paper_Scissors_Game'">View on GitHub</button>
                 </div>
 
+                <!-- Project Card 3 -->
                 <div class="project-card">
-                    <img src="./assets/website.jpg" alt="Rock Paper Scissors Game" class="project-img">
+                    <img src="./assets/website.jpg" alt="Clothing Website" class="project-img">
                     <h3 class="project-title">Clothing Website</h3>
-                    <p class="project-description">An interactive Clothing Website created with group of 3. </p>
+                    <p class="project-description">An interactive Clothing Website created by a team of 3.</p>
                     <div class="project-tags">
                         <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">Html</span>
-                        <span class="project-tag">Css</span>
-                        <span class="project-tag">Php</span>
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">PHP</span>
                     </div>
-                    <button class="project-btn" onclick="location.href='https://github.com/AashishSubedi/Rock_Paper_Scissors_Game'">View on GitHub</button>
+                    <button class="project-btn" onclick="location.href='https://github.com/AashishSubedi/Clothing_Website'">View on GitHub</button>
+                </div>
+
+                <!-- Project Card 4 (Additional Project) -->
+                <div class="project-card">
+                    <img src="./assets/project-4.png" alt="Portfolio Website" class="project-img">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">My personal portfolio website built using HTML, CSS, and JavaScript.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">HTML</span>
+                        <span class="project-tag">CSS</span>
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                    <button class="project-btn" onclick="location.href='https://github.com/AashishSubedi/Portfolio_Website'">View on GitHub</button>
+                </div>
+
+                <!-- Project Card 5 (Additional Project) -->
+                <div class="project-card">
+                    <img src="./assets/project-5.png" alt="Todo List App" class="project-img">
+                    <h3 class="project-title">Todo List App</h3>
+                    <p class="project-description">A simple and interactive Todo List app created using JavaScript for task management.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">JavaScript</span>
+                    </div>
+                    <button class="project-btn" onclick="location.href='https://github.com/AashishSubedi/Todo_List_App'">View on GitHub</button>
                 </div>
             </div>
         </section>
 
+        <!-- Contact Section -->
         <section id="contact">
             <h1 class="title">Contact Me</h1>
-            <p>I'm currently looking for new opportunities and would love to hear from you.
-                Whether you have a question or just want to say hi, I'll do my best to get back to you!</p>
+            <p>I'm currently looking for new opportunities and would love to hear from you. Whether you have a question or just want to say hi, I'll do my best to get back to you!</p>
             <form class="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
@@ -120,6 +151,8 @@
             </div>
         </section>
     </main>
+
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Aashish Subedi. All rights reserved.</p>
     </footer>
