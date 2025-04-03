@@ -1,14 +1,21 @@
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    menu.classList.toggle("open");
-}
 
-// Smooth scrolling for internal links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth"
-        });
-    });
-});
+  // Get the toggle button and check the user's preference from localStorage
+  const toggleButton = document.getElementById('toggle-theme');
+  const body = document.body;
+
+  // Check if the user has a preference saved in localStorage
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+  }
+
+  // Add event listener to toggle between light and dark modes
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+
+    // Save the user's theme preference in localStorage
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+    } else {
+      localStorage.setItem('theme', 'light');
+    }
+  });
